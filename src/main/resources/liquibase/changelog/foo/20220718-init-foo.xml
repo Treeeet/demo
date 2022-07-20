@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="create-table-foo" author="tee">
+        <createTable tableName="foo" schemaName="tutorial" remarks="tutorial api table">
+            <column name="id" autoIncrement="true" type="int4">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="text" remarks="just foo name">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="text" remarks="just foo description">
+                <constraints nullable="false"/>
+            </column>
+            <column name="quantity" type="int" remarks="just foo quantity">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="timestamptz" remarks="When was it created?">
+                <constraints nullable="true"/>
+            </column>
+            <column name="updated_at" type="timestamptz" remarks="When was it updated?">
+                <constraints nullable="true"/>
+            </column>
+            <column name="created_by" type="text" remarks="created by?">
+                <constraints nullable="true"/>
+            </column>
+            <column name="updated_by" type="text" remarks="created by?">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

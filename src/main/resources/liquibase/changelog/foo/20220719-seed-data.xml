@@ -1,0 +1,19 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="seed-data" author="tee">
+        <sql>
+            insert into tutorial.foo (name,description,quantity) values ('test1','test',1);
+            insert into tutorial.foo (name,description,quantity) values ('test2','test',2);
+            insert into tutorial.foo (name,description,quantity) values ('test3','test',3);
+            insert into tutorial.foo (name,description,quantity) values ('test4','test',4);
+            insert into tutorial.foo (name,description,quantity) values ('test5','test',5);
+            insert into tutorial.foo (name,description,quantity) values ('test6','test',6);
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
