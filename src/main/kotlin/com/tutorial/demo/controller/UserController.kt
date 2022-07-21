@@ -22,10 +22,8 @@ class UserController(
     @PostMapping("api/tutorial/user")
     fun createUser(@Valid @RequestBody request: CreateUserRequest): String{
         var optionalUser: Optional<UserEntity>  = userRepository.findByEmail(request.email)
-        print("EMAIL")
         userValidator.validateUser(optionalUser,EMAIL)
         optionalUser  = userRepository.findByUserName(request.userName)
-        print("USER_NAME")
         userValidator.validateUser(optionalUser,USER_NAME);
         var user: UserEntity = userConverter.requestToEntity(request)
         userRepository.save(user)
