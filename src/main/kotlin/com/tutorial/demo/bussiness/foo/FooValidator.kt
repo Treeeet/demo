@@ -1,6 +1,6 @@
-package com.tutorial.demo.bussiness.validator.foo
+package com.tutorial.demo.bussiness.foo
 
-import com.tutorial.demo.model.FooEntity
+import com.tutorial.demo.model.foo.FooEntity
 import org.springframework.stereotype.Component
 import java.util.*
 

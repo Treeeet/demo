@@ -1,4 +1,4 @@
-package com.tutorial.demo.model
+package com.tutorial.demo.model.foo
 
 import java.util.Date
 import javax.persistence.Column
@@ -9,7 +9,7 @@ import javax.persistence.Id
 import javax.persistence.Table
 
 @Entity
-@Table(name = "foo", schema = "tutorial")
+@Table(schema = "tutorial" ,name = "foo")
 data class FooEntity constructor(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

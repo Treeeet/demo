@@ -1,7 +1,7 @@
 package com.tutorial.demo.convertor
 
-import com.tutorial.demo.model.FooEntity
-import com.tutorial.demo.model.FooGetResponse
+import com.tutorial.demo.model.foo.FooEntity
+import com.tutorial.demo.model.foo.Response.FooGetResponse
 import org.springframework.stereotype.Component
 
 @Component

@@ -6,5 +6,6 @@
 
     <include file="foo/20220718-init-foo.xml" relativeToChangelogFile="true"/>
     <include file="foo/20220719-seed-data.xml" relativeToChangelogFile="true"/>
+    <include file="user/20220721-init-user.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>
